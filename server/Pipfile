@@ -10,8 +10,14 @@ flask-cors = "*"
 flask-jwt-extended = "*"
 flask-sqlalchemy = "*"
 plaid-python = "*"
+python-dotenv = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.11"
+
+[scripts]
+start = "flask run"
+migrate = "flask db migrate"
+upgrade = "flask db upgrade"
