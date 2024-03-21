@@ -41,8 +41,8 @@ def create_app():
     app.plaid_client = plaid_api.PlaidApi(api_client)
 
     # Register Blueprints
-    # from .yourmodule import your_blueprint
-    # app.register_blueprint(your_blueprint, url_prefix='/api/v1')
+    from .auth import auth
+    app.register_blueprint(auth)
 
     # Error Handlers Below
 
